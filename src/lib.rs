@@ -25,3 +25,8 @@ pub use self::arm::bindings::*;
 mod arm64;
 #[cfg(target_arch = "aarch64")]
 pub use self::arm64::bindings::*;
+
+#[cfg(target_arch = "riscv64")]
+mod riscv;
+#[cfg(target_arch = "riscv64")]
+pub use self::riscv::bindings::*;
